@@ -1,0 +1,20 @@
+services:
+  mongodb:
+    image: mongo:8.0.15-noble
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: SiuAcount123**
+      MONGO_INITDB_DATABASE: accountdb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mongo-network
+
+volumes:
+  mongo-data:
+
+networks:
+  mongo-network:
+    driver: bridge
