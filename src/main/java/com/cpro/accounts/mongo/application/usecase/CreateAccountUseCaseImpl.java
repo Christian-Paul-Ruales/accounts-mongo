@@ -18,12 +18,11 @@ public class CreateAccountUseCaseImpl implements CreateAccountUseCase {
 
     @Override
     public Result<Account> execute(Account account) {
-        Result result;
         if(account.value().compareTo(AccountConstants.limit) > 0) {
             return new Result.Failure<>(
                     Error.builder()
                             .errorEnum(ErrorEnum.CANNOT_CREATE)
-                            .message("Initial value cannot be higher tan %d".formatted(AccountConstants.limit))
+                            .message("Initial value cannot be higher tan %f".formatted(AccountConstants.limit))
                             .build()
             );
         }
