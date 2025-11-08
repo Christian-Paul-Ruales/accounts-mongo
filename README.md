@@ -22,9 +22,3 @@ La documentacion se encuentra en la carpeta ***/docs***
 ```shell
 docker compose -f docker-compose-dev.yml up -d --build
 ```
-3.1. Ejecucion desde el IDE, configurado java 21 ***Current File***
-3.2. con maven
-
-```shell
-mvn clean install
-```

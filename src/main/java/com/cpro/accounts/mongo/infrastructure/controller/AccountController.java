@@ -24,6 +24,7 @@ import java.util.List;
 @RequestMapping("/account")
 @RequiredArgsConstructor
 public class AccountController {
+
     private final CreateAccountUseCase createAccountUseCase;
     private final GetAccountsByOwnerUseCase getAccountsByOwnerUseCase;
 

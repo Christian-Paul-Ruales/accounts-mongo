@@ -10,6 +10,7 @@ public class TestConstants {
     public static final BigDecimal VALUE = BigDecimal.valueOf(1000.00);
     public static final BigDecimal MAX_VALUE_TRANSFER = BigDecimal.valueOf(15000.00);
     public static final String IDENTIFICATION = "1700000000";
+    public static final String IDENTIFICATION_GET = "1725552166";
     public static final int DEFAULT_INSTANTANTION = 1;
 
     public static final Account ACCOUNT_TEMPLATE = Account.builder()
@@ -19,4 +20,12 @@ public class TestConstants {
             .ownerIdentification(IDENTIFICATION)
             .maxValueTransfer(MAX_VALUE_TRANSFER)
             .build();
+
+    public static Account buildAccount(String id, String name, BigDecimal value) {
+        return ACCOUNT_TEMPLATE.toBuilder()
+                .id(id)
+                .name(name)
+                .value(value)
+                .build();
+    }
 }

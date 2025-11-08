@@ -4,7 +4,7 @@ import lombok.Builder;
 
 import java.math.BigDecimal;
 
-@Builder
+@Builder(toBuilder = true)
 public record Account(
         String id,
         String name,
