@@ -15,6 +15,7 @@ La documentacion se encuentra en la carpeta ***/docs***
 * Git
 * Java 21
 * Docker Desktop
+* Postman
 
 ## 🚀 Instalación y Ejecución
 1. Clonar el repositorio
@@ -22,3 +23,7 @@ La documentacion se encuentra en la carpeta ***/docs***
 ```shell
 docker compose -f docker-compose-dev.yml up -d --build
 ```
+
+## 🧪 Pruebas
+1. Importar el archivo **MongoExampleAccounts.postman_collection.json** en postman
+2. Ejecutar las peticiones primero Create y luego get by CI
